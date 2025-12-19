@@ -1,0 +1,22 @@
+{
+    "name": "x-snc-vendor-management-system",
+    "version": "1.0.0",
+    "description": "[BUILD AGENT GENERATED]:  Comprehensive vendor management application with vendor lookup, request tracking, and task management capabilities",
+    "license": "UNLICENSED",
+    "scripts": {
+        "build": "now-sdk build",
+        "deploy": "now-sdk install",
+        "transform": "now-sdk transform",
+        "types": "now-sdk dependencies"
+    },
+    "dependencies": {
+        "react": "18.2.0",
+        "react-dom": "18.2.0"
+    },
+    "devDependencies": {
+        "@servicenow/sdk": "4.1.1",
+        "@servicenow/glide": "26.0.1",
+        "eslint": "8.50.0",
+        "@servicenow/eslint-plugin-sdk-app-plugin": "4.1.1"
+    }
+}
