@@ -1,6 +1,6 @@
 {
-  "scope": "x_snc_vendor_mto0s",
+  "scope": "x_snc_sms",
   "scopeId": "0ef6e4a333b5fad04890955a7e5c7b6d",
-  "name": "Vendor Management System",
+  "name": "Supplier Maintenance System",
   "tsconfigPath": "./src/server/tsconfig.json"
 }

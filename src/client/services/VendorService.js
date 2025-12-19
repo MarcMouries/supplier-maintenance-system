@@ -1,8 +1,8 @@
 // Service for vendor-related API operations
 export class VendorService {
   constructor() {
-    this.vendorTable = "x_snc_vendor_mto0s_vendor";
-    this.requestTable = "x_snc_vendor_mto0s_vendor_request";
+    this.vendorTable = "x_snc_sms_vendor";
+    this.requestTable = "x_snc_sms_vendor_request";
     this.baseHeaders = {
       "Accept": "application/json",
       "X-UserToken": window.g_ck

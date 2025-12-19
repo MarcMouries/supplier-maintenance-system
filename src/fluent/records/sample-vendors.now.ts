@@ -4,7 +4,7 @@ import { Record } from '@servicenow/sdk/core'
 // Sample vendor records for testing
 export const vendor1 = Record({
   $id: Now.ID['vendor-sample-1'],
-  table: 'x_snc_vendor_mto0s_vendor',
+  table: 'x_snc_sms_vendor',
   data: {
     vendor_name: 'ABC Consulting Services Inc.',
     vendor_name_2: 'ABC Consulting',
@@ -30,7 +30,7 @@ export const vendor1 = Record({
 
 export const vendor2 = Record({
   $id: Now.ID['vendor-sample-2'],
-  table: 'x_snc_vendor_mto0s_vendor',
+  table: 'x_snc_sms_vendor',
   data: {
     vendor_name: 'Global Supply Solutions LLC',
     vendor_id: 'V002',
@@ -54,7 +54,7 @@ export const vendor2 = Record({
 
 export const vendor3 = Record({
   $id: Now.ID['vendor-sample-3'],
-  table: 'x_snc_vendor_mto0s_vendor',
+  table: 'x_snc_sms_vendor',
   data: {
     vendor_name: 'TechFix Repair Services',
     vendor_id: 'V003',

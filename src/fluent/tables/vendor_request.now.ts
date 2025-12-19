@@ -2,8 +2,8 @@ import '@servicenow/sdk/global'
 import { Table, StringColumn, BooleanColumn, DateColumn, DateTimeColumn, ReferenceColumn } from '@servicenow/sdk/core'
 
 // Vendor request table - stores new vendor requests and tracks status
-export const x_snc_vendor_mto0s_vendor_request = Table({
-  name: 'x_snc_vendor_mto0s_vendor_request',
+export const x_snc_sms_vendor_request = Table({
+  name: 'x_snc_sms_vendor_request',
   label: 'Vendor Request',
   schema: {
     request_number: StringColumn({

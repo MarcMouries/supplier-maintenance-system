@@ -4,7 +4,7 @@ import vendorApp from '../../client/index.html'
 
 export const vendor_management_app = UiPage({
   $id: Now.ID['vendor-management-app'],
-  endpoint: 'x_snc_vendor_mto0s_app.do',
+  endpoint: 'x_snc_sms_app.do',
   html: vendorApp,
   direct: true
 })

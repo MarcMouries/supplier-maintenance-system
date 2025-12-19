@@ -38,7 +38,7 @@ export default function App() {
   const renderNavigation = () => (
     <nav className="vendor-nav">
       <div className="nav-brand">
-        <h1>Vendor Management System</h1>
+        <h1>Supplier Maintenance</h1>
       </div>
       <div className="nav-links">
         <button 
@@ -51,7 +51,7 @@ export default function App() {
           className={currentView === 'request' ? 'nav-btn active' : 'nav-btn'}
           onClick={() => navigate('request')}
         >
-          New Request
+          New Vendor Request
         </button>
         <button 
           className={currentView === 'tracking' ? 'nav-btn active' : 'nav-btn'}

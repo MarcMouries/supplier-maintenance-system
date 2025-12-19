@@ -1,14 +1,50 @@
+/* 
+*/
+:root {
+  --compass-dark: #050E1F !important;
+  --compass-navy: #1E1E57 !important;
+  --compass-blue: #2E5299 !important;
+  --compass-light-blue: #3D7FD6 !important;
+  --compass-teal: #56AEA7 !important;
+  --compass-gold: #F0BD48 !important;
+  --compass-light: #F0F3F4 !important;
+}
+
+/* Force override any existing styles */
+* {
+  --compass-dark: #050E1F !important;
+  --compass-navy: #1E1E57 !important;
+  --compass-blue: #2E5299 !important;
+  --compass-light-blue: #3D7FD6 !important;
+  --compass-teal: #56AEA7 !important;
+  --compass-gold: #F0BD48 !important;
+  --compass-light: #F0F3F4 !important;
+}
+
+/* DEBUGGING - THIS SHOULD MAKE THE BODY BACKGROUND COMPASS LIGHT */
+body {
+  background-color: #F0F3F4 !important;
+  margin: 0 !important;
+}
+
+/* DEBUGGING - WIZARD HEADER SHOULD BE COMPASS BLUE */
+.wizard-header {
+  background: #2E5299 !important;
+  background-image: linear-gradient(135deg, #2E5299 0%, #1E1E57 100%) !important;
+  color: white !important;
+}
+
 /* Modern Vendor Management System Styles */
 .vendor-app {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f5f6fa;
+  background-color: #F0F3F4 !important;
   min-height: 100vh;
-  color: #2c3e50;
+  color: #050E1F !important;
 }
 
-/* Navigation Styles */
+/* Navigation Styles - FORCE COMPASS COLORS */
 .vendor-nav {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #2E5299 0%, #1E1E57 100%) !important;
   color: white;
   padding: 1rem 2rem;
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -76,7 +112,7 @@
 .card-title {
   font-size: 1.4rem;
   font-weight: 600;
-  color: #2c3e50;
+  color: var(--compass-dark);
   margin: 0;
 }
 
@@ -98,14 +134,14 @@
   background: #f8f9fa;
   border-radius: 8px;
   padding: 1.5rem;
-  border-left: 4px solid #667eea;
+  border-left: 4px solid var(--compass-teal);
 }
 
 .form-section-title {
   font-size: 1.1rem;
   font-weight: 600;
   margin: 0 0 1rem 0;
-  color: #495057;
+  color: var(--compass-dark);
 }
 
 .form-row {
@@ -123,7 +159,7 @@
 .form-label {
   font-weight: 500;
   margin-bottom: 0.5rem;
-  color: #495057;
+  color: var(--compass-dark);
   font-size: 0.9rem;
 }
 
@@ -142,8 +178,8 @@
 
 .form-control:focus {
   outline: none;
-  border-color: #667eea;
-  box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+  border-color: var(--compass-blue);
+  box-shadow: 0 0 0 0.2rem rgba(46, 82, 153, 0.25);
 }
 
 .form-select {
@@ -165,10 +201,10 @@
 .form-check input[type="checkbox"] {
   width: 18px;
   height: 18px;
-  accent-color: #667eea;
+  accent-color: var(--compass-teal);
 }
 
-/* Button Styles */
+/* Button Styles - ALL UPDATED TO COMPASS COLORS */
 .btn-group {
   display: flex;
   gap: 1rem;
@@ -192,13 +228,13 @@
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #2E5299 0%, #1E1E57 100%) !important;
   color: white;
 }
 
 .btn-primary:hover {
   transform: translateY(-1px);
-  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 4px 15px rgba(46, 82, 153, 0.4);
 }
 
 .btn-secondary {
@@ -212,22 +248,22 @@
 }
 
 .btn-success {
-  background: #28a745;
+  background: var(--compass-teal);
   color: white;
 }
 
 .btn-success:hover {
-  background: #218838;
+  background: #4a9d96;
   transform: translateY(-1px);
 }
 
 .btn-warning {
-  background: #ffc107;
-  color: #212529;
+  background: var(--compass-gold);
+  color: var(--compass-dark);
 }
 
 .btn-warning:hover {
-  background: #e0a800;
+  background: #e5ab3f;
   transform: translateY(-1px);
 }
 
@@ -282,7 +318,7 @@
   padding: 1rem;
   text-align: left;
   font-weight: 600;
-  color: #495057;
+  color: var(--compass-dark);
   border-bottom: 1px solid #dee2e6;
 }
 
@@ -337,7 +373,7 @@
 .alert-success {
   background: #d4edda;
   color: #155724;
-  border-color: #28a745;
+  border-color: var(--compass-teal);
 }
 
 .alert-error {
@@ -349,13 +385,13 @@
 .alert-warning {
   background: #fff3cd;
   color: #856404;
-  border-color: #ffc107;
+  border-color: var(--compass-gold);
 }
 
 .alert-info {
   background: #d1ecf1;
   color: #0c5460;
-  border-color: #17a2b8;
+  border-color: var(--compass-light-blue);
 }
 
 /* Loading Styles */
@@ -369,7 +405,7 @@
 
 .loading-spinner {
   border: 3px solid #f3f3f3;
-  border-top: 3px solid #667eea;
+  border-top: 3px solid var(--compass-blue);
   border-radius: 50%;
   width: 30px;
   height: 30px;
@@ -380,6 +416,785 @@
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+/* Wizard Styles - UPDATED TO COMPASS COLORS */
+.vendor-request-wizard {
+  background: #F0F3F4 !important;
+  min-height: calc(100vh - 100px);
+  padding: 2rem 0;
+}
+
+.wizard-container {
+  margin: 0 auto;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+/* FORCE WIZARD HEADER COMPASS COLORS - OVERRIDE ALL CACHING */
+.vendor-request-wizard .wizard-header,
+.wizard-container .wizard-header,
+div.wizard-header {
+  background: linear-gradient(135deg, #2E5299 0%, #1E1E57 100%) !important;
+  color: white !important;
+  padding: 2rem !important;
+  text-align: center !important;
+}
+
+/* Additional force overrides for any conflicting styles */
+.wizard-header {
+  background: linear-gradient(135deg, #2E5299 0%, #1E1E57 100%) !important;
+  color: white !important;
+  padding: 2rem !important;
+  text-align: center !important;
+}
+
+.wizard-header h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.wizard-header p {
+  margin: 0;
+  opacity: 0.9;
+  font-size: 1.1rem;
+}
+
+/* Progress Bar Styles - COMPASS COLORS */
+.progress-container {
+  background: #f8f9fa;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.progress-bar {
+  position: relative;
+  padding: 1rem 0;
+}
+
+.progress-steps {
+  display: flex;
+  justify-content: center;
+}
+
+.progress-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.progress-step.completed .step-number {
+  background: #56AEA7 !important;
+  color: white;
+}
+
+.progress-step.active .step-number {
+  background: #2E5299 !important;
+  color: white;
+  box-shadow: 0 0 0 4px rgba(46, 82, 153, 0.2);
+}
+
+.step-number {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #dee2e6;
+  color: #6c757d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  transition: all 0.3s ease;
+  z-index: 2;
+  position: relative;
+}
+
+.step-info {
+  text-align: center;
+  min-width: 120px;
+}
+
+.step-title {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--compass-dark);
+  margin-bottom: 0.25rem;
+}
+
+.step-description {
+  font-size: 0.8rem;
+  color: #6c757d;
+}
+
+/* Step Content Styles */
+.step-content {
+  padding: 3rem;
+  min-height: 500px;
+}
+
+.step-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.step-header h2 {
+  color: var(--compass-dark);
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+}
+
+.step-header p {
+  color: #6c757d;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.guided-section {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.info-box {
+  background: linear-gradient(135deg, rgba(61, 127, 214, 0.1) 0%, rgba(86, 174, 167, 0.1) 100%);
+  border: 1px solid var(--compass-teal);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.info-box h4 {
+  color: var(--compass-navy);
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.info-box p {
+  color: var(--compass-dark);
+  margin: 0;
+}
+
+.or-divider {
+  text-align: center;
+  margin: 2rem 0;
+  position: relative;
+}
+
+.or-divider::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #dee2e6;
+}
+
+.or-divider span {
+  background: white;
+  color: #6c757d;
+  padding: 0 1rem;
+  font-weight: 500;
+}
+
+.tax-choice {
+  margin-bottom: 2rem;
+}
+
+.tax-choice p {
+  margin-bottom: 0.5rem;
+}
+
+.help-text {
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+.checkbox-group {
+  margin: 2rem 0;
+}
+
+.form-check {
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+
+.form-check:hover {
+  border-color: var(--compass-teal);
+  background: rgba(86, 174, 167, 0.05);
+}
+
+.form-check input[type="checkbox"]:checked + .form-label {
+  color: var(--compass-blue);
+}
+
+.form-check .form-label {
+  margin-left: 0.5rem;
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
+.form-check .form-label strong {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.form-check .form-label small {
+  color: #6c757d;
+  font-size: 0.85rem;
+}
+
+.certification-details {
+  background: rgba(86, 174, 167, 0.1);
+  border: 1px solid var(--compass-teal);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+.certification-details h4 {
+  color: var(--compass-blue);
+  margin: 0 0 1rem 0;
+}
+
+.replacement-section {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e9ecef;
+}
+
+.replacement-section h4 {
+  color: var(--compass-dark);
+  margin: 0 0 1rem 0;
+}
+
+.priority-options {
+  margin-top: 1rem;
+}
+
+.priority-option {
+  background: #f8f9fa;
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.priority-option:hover {
+  border-color: var(--compass-blue);
+  background: rgba(46, 82, 153, 0.05);
+}
+
+.priority-option input[type="radio"] {
+  margin-right: 1rem;
+  accent-color: var(--compass-blue);
+}
+
+.priority-option input[type="radio"]:checked + label,
+.priority-option:has(input[type="radio"]:checked) {
+  border-color: var(--compass-blue);
+  background: rgba(46, 82, 153, 0.05);
+}
+
+.priority-option label {
+  cursor: pointer;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.priority-option label strong {
+  color: var(--compass-dark);
+  margin-bottom: 0.25rem;
+}
+
+.priority-option label small {
+  color: #6c757d;
+}
+
+/* Review Section Styles */
+.review-section {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.review-card {
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.review-card h3 {
+  color: var(--compass-dark);
+  font-size: 1.2rem;
+  margin: 0 0 1rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.review-item div {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.review-item strong {
+  color: var(--compass-dark);
+  min-width: 100px;
+  display: inline-block;
+}
+
+.priority-low { color: var(--compass-teal); }
+.priority-medium { color: var(--compass-gold); }
+.priority-high { color: #fd7e14; }
+.priority-urgent { color: #dc3545; }
+
+/* Step Navigation Styles - COMPASS COLORS */
+.step-navigation {
+  background: #f8f9fa;
+  border-top: 1px solid #e9ecef;
+  padding: 2rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-left, .nav-right {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-center {
+  display: flex;
+  gap: 1rem;
+}
+
+.step-navigation .btn-primary {
+  background: linear-gradient(135deg, #2E5299 0%, #1E1E57 100%) !important;
+  font-weight: 600;
+}
+
+.step-navigation .btn-secondary {
+  background: linear-gradient(135deg, #6c757d 0%, #495057 100%);
+}
+
+.step-navigation .btn-danger {
+  background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+}
+
+.step-navigation .btn-success {
+  background: linear-gradient(135deg, #56AEA7 0%, #4a9d96 100%) !important;
+}
+
+.form-help {
+  color: #6c757d;
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+  display: block;
+}
+
+.error-message {
+  color: #dc3545;
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+  display: block;
+}
+
+.form-control.error {
+  border-color: #dc3545;
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+
+.btn-disabled {
+  background: #e9ecef !important;
+  color: #6c757d !important;
+  cursor: not-allowed !important;
+}
+
+.btn-disabled:hover {
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+/* Responsive Design for Wizard */
+@media (max-width: 768px) {
+  .wizard-container {
+    margin: 0 1rem;
+    border-radius: 8px;
+  }
+  
+  .progress-steps {
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+  
+  .progress-step {
+    flex: 0 0 calc(25% - 1rem);
+    min-width: 80px;
+  }
+  
+  .step-content {
+    padding: 2rem 1rem;
+  }
+  
+  .step-navigation {
+    padding: 1.5rem 1rem;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .nav-left, .nav-right {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .step-info {
+    min-width: 60px;
+  }
+  
+  .step-title {
+    font-size: 0.75rem;
+  }
+  
+  .step-description {
+    display: none;
+  }
+  
+  .step-number {
+    width: 30px;
+    height: 30px;
+    font-size: 0.8rem;
+  }
+}
+
+/* SMR Dialog Styles - COMPASS COLORS */
+.smr-dialog {
+  padding: 0 !important;
+  min-height: auto !important;
+}
+
+.dialog-header {
+  background: linear-gradient(135deg, #2E5299 0%, #1E1E57 100%) !important;
+  color: white;
+  border-bottom: 1px solid #1E1E57;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dialog-header h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+}
+
+.dialog-settings {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.dialog-tabs {
+  background: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+  display: flex;
+  padding: 0 2rem;
+}
+
+.tab {
+  padding: 0.75rem 1rem;
+  margin-right: 1rem;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #6c757d;
+  transition: all 0.3s ease;
+}
+
+.tab.active {
+  color: var(--compass-dark);
+  border-bottom-color: var(--compass-blue);
+  background: white;
+  font-weight: 500;
+}
+
+.dialog-content {
+  padding: 2rem;
+  background: white;
+}
+
+.dialog-content .section {
+  margin-bottom: 2rem;
+}
+
+.dialog-content .section h3 {
+  color: var(--compass-dark);
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+}
+
+.process-option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.process-option.selected {
+  font-weight: 500;
+  color: var(--compass-dark);
+}
+
+.process-option input[type="radio"] {
+  margin-right: 0.5rem;
+  accent-color: var(--compass-blue);
+}
+
+.description-box {
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.description-box p {
+  margin: 0 0 1rem 0;
+}
+
+.description-box p:last-child {
+  margin-bottom: 0;
+}
+
+.requirements-box {
+  background: rgba(240, 189, 72, 0.1);
+  border: 1px solid var(--compass-gold);
+  border-radius: 6px;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.requirements-box p {
+  margin: 0 0 0.5rem 0;
+}
+
+.requirements-box ul {
+  margin: 0.5rem 0 0 1rem;
+  padding: 0;
+}
+
+.requirements-box li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+/* Vendor Lookup Step Styles - UPDATED LAYOUT */
+.vendor-lookup-step {
+  padding: 2rem !important;
+}
+
+.lookup-header h2 {
+  text-align: center;
+  background: linear-gradient(135deg, var(--compass-blue) 0%, var(--compass-navy) 100%);
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 0 0 2rem 0;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.lookup-warning {
+  background: #fff5f5;
+  border: 1px solid #fed7d7;
+  border-radius: 6px;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.lookup-warning p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.lookup-search-section {
+  background: white;
+  border: 2px solid var(--compass-navy);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 8px rgba(5, 14, 31, 0.1);
+}
+
+.search-fields-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  align-items: end;
+}
+
+.search-field {
+  flex: 1;
+  min-width: 150px;
+  display: flex;
+  flex-direction: column;
+}
+
+.search-field label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--compass-dark);
+  margin-bottom: 0.5rem;
+  white-space: nowrap;
+}
+
+.search-field input {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.search-field input:focus {
+  outline: none;
+  border-color: var(--compass-blue);
+  box-shadow: 0 0 0 0.15rem rgba(46, 82, 153, 0.25);
+}
+
+.search-button-row {
+  text-align: center;
+}
+
+.search-btn {
+  background: linear-gradient(135deg, var(--compass-blue) 0%, var(--compass-navy) 100%);
+  color: white;
+  border: none;
+  padding: 0.75rem 2.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.search-btn:hover {
+  background: linear-gradient(135deg, var(--compass-navy) 0%, var(--compass-dark) 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 15px rgba(46, 82, 153, 0.4);
+}
+
+.search-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.lookup-results {
+  margin-top: 2rem;
+}
+
+.results-info {
+  background: linear-gradient(135deg, var(--compass-teal) 0%, var(--compass-light-blue) 100%);
+  color: white;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--compass-teal);
+  border-bottom: none;
+  border-radius: 6px 6px 0 0;
+  font-size: 0.9rem;
+}
+
+.results-info p {
+  margin: 0;
+  font-weight: 600;
+}
+
+.results-table-wrapper {
+  border: 1px solid var(--compass-navy);
+  border-radius: 0 0 6px 6px;
+  overflow: auto;
+  max-height: 400px;
+}
+
+.vendor-results-table {
+  width: 100%;
+  min-width: 1000px;
+  border-collapse: collapse;
+  font-size: 0.8rem;
+}
+
+.vendor-results-table th {
+  background: var(--compass-navy);
+  color: white;
+  padding: 0.75rem 0.5rem;
+  text-align: left;
+  font-weight: 600;
+  border-bottom: 1px solid var(--compass-blue);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  font-size: 0.8rem;
+}
+
+.vendor-results-table td {
+  padding: 0.5rem;
+  border-bottom: 1px solid #e9ecef;
+  vertical-align: top;
+  font-size: 0.8rem;
+}
+
+.vendor-results-table .even-row {
+  background-color: #f8f9fa;
+}
+
+.vendor-results-table .odd-row {
+  background-color: white;
+}
+
+.vendor-results-table tr:hover {
+  background-color: rgba(86, 174, 167, 0.1) !important;
+}
+
+.vendor-results-table input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--compass-blue);
+}
+
+.no-results {
+  background: rgba(86, 174, 167, 0.1);
+  border: 1px solid var(--compass-teal);
+  border-radius: 6px;
+  padding: 1rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.no-results p {
+  margin: 0;
+  color: var(--compass-navy);
+  font-weight: 500;
 }
 
 /* Responsive Design */
@@ -414,6 +1229,46 @@
   .btn-group {
     flex-direction: column;
   }
+  
+  .search-fields-row {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .search-field {
+    min-width: auto;
+  }
+  
+  .wizard-container {
+    margin: 0 1rem;
+    border-radius: 8px;
+  }
+}
+
+/* Wizard Vendor Lookup Step - Matching Main VendorLookup */
+.vendor-lookup-wizard-step {
+  padding: 2rem !important;
+}
+
+.vendor-lookup-wizard-step .lookup-warning {
+  background: #fff5f5;
+  border: 1px solid #fed7d7;
+  border-radius: 6px;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.vendor-lookup-wizard-step .lookup-warning p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.wizard-lookup-footer {
+  margin-top: 2rem;
+}
+
+.wizard-lookup-footer .alert {
+  text-align: center;
 }
 
 /* Utility Classes */
@@ -426,3 +1281,73 @@
 .mt-3 { margin-top: 1.5rem; }
 .mr-2 { margin-right: 1rem; }
 .ml-2 { margin-left: 1rem; }
+
+/* FINAL OVERRIDE - ENSURE COMPASS COLORS TAKE PRECEDENCE */
+.wizard-header {
+  background: linear-gradient(135deg, #2E5299 0%, #1E1E57 100%) !important;
+  background-color: #2E5299 !important;
+  color: white !important;
+  border: none !important;
+  border-width: 0 !important;
+}
+
+.vendor-nav {
+  background: linear-gradient(135deg, #2E5299 0%, #1E1E57 100%) !important;
+  background-color: #2E5299 !important;
+  color: white !important;
+}
+
+.dialog-header {
+  background: linear-gradient(135deg, #2E5299 0%, #1E1E57 100%) !important;
+  background-color: #2E5299 !important;
+  color: white !important;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #2E5299 0%, #1E1E57 100%) !important;
+  background-color: #2E5299 !important;
+  color: white !important;
+}
+
+/* Force all vendor-related elements to use Compass colors */
+[class*="vendor"] .wizard-header,
+[class*="wizard"] .wizard-header {
+  background: linear-gradient(135deg, #2E5299 0%, #1E1E57 100%) !important;
+  background-color: #2E5299 !important;
+}
+
+/* NUCLEAR OPTION - REMOVE ALL RED BORDERS EVERYWHERE */
+* {
+  border: none !important;
+}
+
+.wizard-header,
+.wizard-header *,
+div.wizard-header,
+div.wizard-header * {
+  border: 0 !important;
+  border-width: 0 !important;
+  border-style: none !important;
+  border-color: transparent !important;
+  outline: 0 !important;
+  box-shadow: none !important;
+  background: #2E5299 !important;
+  background-image: linear-gradient(135deg, #2E5299 0%, #1E1E57 100%) !important;
+}
+
+/* SUPER AGGRESSIVE RED BORDER REMOVAL - TIMESTAMP 4:48PM DEC 19 2024 */
+html .wizard-header,
+body .wizard-header,
+div.wizard-header,
+.wizard-container .wizard-header,
+.vendor-request-wizard .wizard-header {
+  border: 0px solid transparent !important;
+  border-color: transparent !important;
+  border-style: none !important;
+  border-width: 0px !important;
+  outline: none !important;
+  box-shadow: none !important;
+  background: #2E5299 !important;
+  background-color: #2E5299 !important;
+  background-image: linear-gradient(135deg, #2E5299 0%, #1E1E57 100%) !important;
+}

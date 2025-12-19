@@ -2,8 +2,8 @@ import '@servicenow/sdk/global'
 import { Table, StringColumn, BooleanColumn, DateColumn } from '@servicenow/sdk/core'
 
 // Vendor master table - stores approved vendor records
-export const x_snc_vendor_mto0s_vendor = Table({
-  name: 'x_snc_vendor_mto0s_vendor',
+export const x_snc_sms_vendor = Table({
+  name: 'x_snc_sms_vendor',
   label: 'Vendor',
   schema: {
     vendor_name: StringColumn({ 

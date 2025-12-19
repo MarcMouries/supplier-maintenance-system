@@ -6,7 +6,7 @@ import { setRequestDefaults, notifyRequestCreated } from '../../server/vendor-re
 export const setVendorRequestDefaults = BusinessRule({
   $id: Now.ID['br-vendor-request-defaults'],
   name: 'Set Vendor Request Defaults',
-  table: 'x_snc_vendor_mto0s_vendor_request',
+  table: 'x_snc_sms_vendor_request',
   when: 'before',
   action: ['insert'],
   script: setRequestDefaults,
@@ -19,7 +19,7 @@ export const setVendorRequestDefaults = BusinessRule({
 export const notifyVendorRequestCreated = BusinessRule({
   $id: Now.ID['br-vendor-request-notify'],
   name: 'Notify Vendor Request Created', 
-  table: 'x_snc_vendor_mto0s_vendor_request',
+  table: 'x_snc_sms_vendor_request',
   when: 'after',
   action: ['insert'],
   script: notifyRequestCreated,
