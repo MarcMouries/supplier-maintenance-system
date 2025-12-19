@@ -244,13 +244,13 @@ export default function VendorRequestForm({ service, currentUser }) {
                 <h3>Process Description</h3>
                 <div className="description-box">
                   <p>
-                    The New Vendor process allows you to request a new vendor to be created and added to SAP. If the request is approved, the new vendor will also be added to the MyFinance application when applicable.
+                    The New Vendor request system allows you to request a new vendor to be created and added to SAP. If the request is approved, the new vendor will also be added to the MyFinance application when applicable.
                   </p>
                   <p>
-                    The New Vendor process requires vendor CEO approval for the requested vendor prior to SMR submission. The Model Market Vendor Exception Form (https://cppgic.sharepoint.com/sites/us-myc-foodbuy/purchasingandcomplianceresources#/sites/opus-local-model-market.aspx) and an email showing sector CEO approval must be submitted with this request. If you do not have access to MyCompass, please contact your account manager for the Vendor Exception Form.**
+                    The New Vendor request system requires vendor CEO approval for the requested vendor prior to SMR submission. The Model Market Vendor Exception Form (https://cppgic.sharepoint.com/sites/us-myc-foodbuy/purchasingandcomplianceresources#/sites/opus-local-model-market.aspx) and an email showing sector CEO approval must be submitted with this request. If you do not have access to MyCompass, please contact your account manager for the Vendor Exception Form.
                   </p>
                   <p>
-                    For vendors that are technical in nature (i.e. POS Systems, Computers, Hardware, Software, etc.), please go to: https://lf.compass-usa.com/Forms/VMOProQual to start the qualification process prior to requesting a new vendor.
+                    For vendors that are technical in nature (i.e. POS Systems, Computers, Hardware, Software, etc.), please go to: https://lf.compass-usa.com/Forms/VMOProQual to start the qualification system prior to requesting a new vendor.
                   </p>
                 </div>
               </div>
