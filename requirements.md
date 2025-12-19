@@ -10,32 +10,32 @@ The SMR (Supplier Maintenance Request) is the official workflow used to request 
 - Model Market Vendor Exception Form submission
 - Email documentation showing sector CEO approval
 - Complete vendor information gathering and validation
-- Integration with SAP and MyFinance systems when applicable The system provides a modern web-based interface with guided workflows for creating vendor requests, searching existing vendors, tracking request status, and managing assigned tasks. The application features the official Compass brand color palette throughout for consistent corporate branding.
+- Integration with SAP and MyFinance systems when applicable The system provides a modern web-based interface with guided workflows for creating vendor requests, searching existing vendors, tracking request status, and managing assigned tasks. The application features the official corporate brand color palette throughout for consistent branding.
 
-## Official Compass Color Palette
+## Official Brand Color Palette
 
 **EXACT HEX CODES FROM BRAND SPECIFICATION:**
 
 | Color Name | Hex Code | Usage |
 |------------|----------|--------|
-| **Compass Dark** | `#050E1F` | Primary text, headers, dark elements |
-| **Compass Navy** | `#1E1E57` | Secondary backgrounds, gradients |
-| **Compass Blue** | `#2E5299` | Primary buttons, active states, links |
-| **Compass Light Blue** | `#3D7FD6` | Secondary accents, hover states |
-| **Compass Teal** | `#56AEA7` | Success states, completed items, progress |
-| **Compass Gold** | `#F0BD48` | Warnings, highlights, alerts, important notices |
-| **Compass Light** | `#F0F3F4` | Background, containers, subtle areas |
+| **Brand Dark** | `#050E1F` | Primary text, headers, dark elements |
+| **Brand Navy** | `#1E1E57` | Secondary backgrounds, gradients |
+| **Brand Blue** | `#2E5299` | Primary buttons, active states, links |
+| **Brand Light Blue** | `#3D7FD6` | Secondary accents, hover states |
+| **Brand Teal** | `#56AEA7` | Success states, completed items, progress |
+| **Brand Gold** | `#F0BD48` | Warnings, highlights, alerts, important notices |
+| **Brand Light** | `#F0F3F4` | Background, containers, subtle areas |
 
 **CSS Variables Implementation:**
 ```css
 :root {
-  --compass-dark: #050E1F;
-  --compass-navy: #1E1E57;
-  --compass-blue: #2E5299;
-  --compass-light-blue: #3D7FD6;
-  --compass-teal: #56AEA7;
-  --compass-gold: #F0BD48;
-  --compass-light: #F0F3F4;
+  --brand-dark: #050E1F;
+  --brand-navy: #1E1E57;
+  --brand-blue: #2E5299;
+  --brand-light-blue: #3D7FD6;
+  --brand-teal: #56AEA7;
+  --brand-gold: #F0BD48;
+  --brand-light: #F0F3F4;
 }
 ```
 
@@ -58,7 +58,7 @@ The SMR (Supplier Maintenance Request) is the official workflow used to request 
 **Technical Implementation**:
 - React component with state management for search parameters
 - ServiceNow Table API integration for vendor data retrieval
-- Compass color scheme with proper branding
+- Corporate brand color scheme with proper branding
 - Reusable component architecture for consistency
 
 ### 2. New Vendor Request Form
@@ -68,12 +68,12 @@ The SMR (Supplier Maintenance Request) is the official workflow used to request 
 **Requirement**: Exact replica of the "SMR Request Dialog" with Compass color theming.
 
 **Features**:
-- Dialog header with Compass Blue-to-Navy gradient background
+- Dialog header with Brand Blue-to-Navy gradient background
 - Tab navigation: Start | Requested Process | Additional Info | Summary
 - "New Vendor" process selection (pre-selected radio button)
 - Process description section with policy explanation
-- Required documents section with Compass Gold highlighting
-- Navigation buttons with Compass color scheme
+- Required documents section with Brand Gold highlighting
+- Navigation buttons with corporate brand color scheme
 
 **Content Requirements**:
 - Complete policy text about CEO approval requirements
@@ -92,13 +92,13 @@ The SMR (Supplier Maintenance Request) is the official workflow used to request 
 - Professional styling matching main application
 
 #### 2.3 Guided Wizard Steps (Steps 3-10)
-**Requirement**: Multi-step wizard with progressive disclosure, validation, and Compass theming.
+**Requirement**: Multi-step wizard with progressive disclosure, validation, and brand theming.
 
 **Step 3 - Getting Started**: Basic vendor information
 - Legal vendor name (required - exact as in legal documents)
 - Alternate names (optional)
 - Important note about legal name accuracy
-- Compass-themed form elements
+- Brand-themed form elements
 
 **Step 4 - Tax Information**: W9 tax identification
 - SSN or EIN selection (one required)
@@ -124,7 +124,7 @@ The SMR (Supplier Maintenance Request) is the official workflow used to request 
 - Internal classification codes
 
 **Step 8 - Certifications**: Special business certifications
-- Minority Owned Business checkbox with Compass Teal accents
+- Minority Owned Business checkbox with Brand Teal accents
 - Women Business Enterprise (WBE) checkbox
 - Mastercard acceptance checkbox
 - Certificate number and expiration date (conditional)
@@ -133,7 +133,7 @@ The SMR (Supplier Maintenance Request) is the official workflow used to request 
 **Step 9 - Vendor Purpose**: Usage and priority
 - Detailed description of vendor services (required)
 - Priority level selection with visual indicators (Low, Medium, High, Urgent)
-- Compass-themed priority options with proper styling
+- Brand-themed priority options with proper styling
 
 **Step 10 - Review & Submit**: Final confirmation
 - Complete summary of all entered information in organized cards
@@ -142,15 +142,15 @@ The SMR (Supplier Maintenance Request) is the official workflow used to request 
 - Submit functionality with success confirmation
 
 ### 3. Request Search/Tracking
-**Requirement**: View and filter vendor requests by multiple criteria with Compass theming.
+**Requirement**: View and filter vendor requests by multiple criteria with brand theming.
 
 **Features**:
 - Filter by request status, requester, date, and vendor details
 - Status workflow management with action buttons
-- Priority-based visual indicators using Compass colors
+- Priority-based visual indicators using brand colors
 - Complete audit trail from request to completion
 - Bulk actions for status updates
-- Compass-themed status badges
+- Brand-themed status badges
 
 **Status Workflow**:
 - New → In Review → Pending Approval → Approved → Completed
@@ -158,44 +158,34 @@ The SMR (Supplier Maintenance Request) is the official workflow used to request 
 - Status-specific action buttons with proper color coding
 
 ### 4. Task Management Dashboard
-**Requirement**: Display assigned tasks and alerts with Compass color scheme.
+**Requirement**: Display assigned tasks and alerts with corporate brand color scheme.
 
 **Features**:
-- Alerts section with Compass Gold highlighting for high-priority items
+- Alerts section with Brand Gold highlighting for high-priority items
 - Task summary with metrics and counts
 - Assignment management with self-assignment capability
 - Days aging tracking with color-coded indicators
 - Quick actions for status updates and reviews
-- Compass Teal for completed tasks, Blue for active tasks
+- Brand Teal for completed tasks, Blue for active tasks
 
 ## Visual Design & Branding Requirements
 
-### 5.1 Compass Color Palette (Official Brand Colors)
-**Primary Colors**:
-- **Compass Dark**: `#050E1F` - Primary text, headers
-- **Compass Navy**: `#1E1E57` - Secondary backgrounds, gradients
-- **Compass Blue**: `#2E5299` - Primary buttons, active states
-- **Compass Light Blue**: `#3D7FD6` - Links, secondary accents
-- **Compass Teal**: `#56AEA7` - Success states, completed items
-- **Compass Gold**: `#F0BD48` - Warnings, highlights, alerts
-- **Compass Light**: `#F0F3F4` - Background, containers
-
-### 5.2 Application Elements Using Compass Colors
+### 5.1 Application Elements Using Brand Colors
 - **Navigation Header**: Blue-to-Navy gradient
 - **Wizard Header**: Blue-to-Navy gradient
 - **Progress Steps**: Teal for completed, Blue for active
 - **Primary Buttons**: Blue-to-Navy gradient
 - **Success Elements**: Teal gradient
 - **Warning Elements**: Gold backgrounds
-- **Application Background**: Compass Light
-- **Text Elements**: Compass Dark
+- **Application Background**: Brand Light
+- **Text Elements**: Brand Dark
 
-### 5.3 Layout Requirements
+### 5.2 Layout Requirements
 - **Full-width wizard container** with no max-width constraints
 - **Centered progress steps** for better visual balance
 - **No progress fill bar** for cleaner step indicator design
 - **Professional card-based layouts** with subtle shadows
-- **Modern gradient themes** using Compass colors throughout
+- **Modern gradient themes** using brand colors throughout
 
 ## Data Model Requirements
 
@@ -248,17 +238,17 @@ The SMR (Supplier Maintenance Request) is the official workflow used to request 
 ## User Interface Requirements
 
 ### 7.1 Navigation Requirements
-- Modern Compass gradient navigation bar (Blue-to-Navy)
+- Modern gradient navigation bar (Blue-to-Navy)
 - Four main sections: Vendor Lookup, New Vendor Request, Request Tracking, My Tasks
-- Active state indicators using Compass colors
+- Active state indicators using brand colors
 - Responsive design for mobile devices
-- Professional branding with Compass color consistency
+- Professional branding with corporate brand color consistency
 
 ### 7.2 Wizard Interface Requirements
 - **10-step wizard** with centered progress indicators
 - **Full-width container** utilizing complete screen space
 - **Component reuse** - VendorLookup component used in both main app and wizard Step 2
-- **Compass theming** throughout all steps
+- **Corporate brand theming** throughout all steps
 - **Professional form styling** with validation feedback
 - **Mobile-responsive** design with touch-friendly elements
 
@@ -278,11 +268,11 @@ The SMR (Supplier Maintenance Request) is the official workflow used to request 
 - **Module System**: ES6 modules with proper imports
 
 ### 8.2 CSS Architecture
-- **CSS Custom Properties** for Compass color variables
+- **CSS Custom Properties** for brand color variables
 - **!important declarations** for critical branding elements to override caching
 - **Responsive design** with mobile-first approach
 - **Component-based styling** with clear separation of concerns
-- **Professional gradients** using official Compass colors
+- **Professional gradients** using official brand colors
 
 ### 8.3 Code Organization
 ```
@@ -291,7 +281,7 @@ src/
 │   ├── index.html              # Main entry point
 │   ├── main.jsx                # React bootstrap
 │   ├── app.jsx                 # Main application component
-│   ├── app.css                 # Application styles with Compass colors
+│   ├── app.css                 # Application styles with brand colors
 │   ├── components/             # React components
 │   │   ├── VendorLookup.jsx    # Reusable lookup component
 │   │   ├── VendorRequestForm.jsx # 10-step wizard
@@ -337,14 +327,14 @@ src/
 - Optimized table queries with appropriate limits
 
 ### 11.2 Branding Performance
-- Consistent Compass color application across all elements
+- Consistent brand color application across all elements
 - No visual flicker during color theme application
 - Proper CSS cascading for brand consistency
 
 ## Testing Requirements
 
 ### 12.1 Visual Testing
-- Compass color consistency across all components
+- Brand color consistency across all components
 - Responsive design testing with brand elements
 - Cross-browser color rendering verification
 - Accessibility testing with proper contrast ratios
@@ -352,7 +342,7 @@ src/
 ### 12.2 Functional Testing
 - Complete 10-step wizard workflow testing
 - VendorLookup component reuse validation
-- Form validation testing with Compass-themed feedback
+- Form validation testing with brand-themed feedback
 - Search functionality testing in both main app and wizard
 
 ## Sample Data Requirements
@@ -366,21 +356,21 @@ src/
 ## Future Enhancement Considerations
 
 ### 14.1 Branding Enhancements
-- Additional Compass brand elements (logos, icons)
+- Additional corporate brand elements (logos, icons)
 - Advanced theming capabilities
-- Dark mode support with Compass color variants
+- Dark mode support with brand color variants
 - Enhanced accessibility features
 
 ### 14.2 Potential Features
-- Document attachment support with Compass-themed file uploads
+- Document attachment support with brand-themed file uploads
 - Advanced reporting with branded visualizations
 - Vendor portal with consistent branding
-- Mobile app with Compass design system
+- Mobile app with corporate brand design system
 
 ## Compliance Requirements
 
 ### 15.1 Brand Compliance
-- Strict adherence to Compass color palette specifications
+- Strict adherence to corporate brand color palette specifications
 - Consistent application of brand colors across all elements
 - Professional appearance meeting corporate standards
 - Accessibility compliance with proper color contrast
@@ -397,4 +387,4 @@ src/
 **Last Updated**: December 19, 2024  
 **Application Version**: 1.1.0  
 **ServiceNow Scope**: x_snc_vendor_mto0s  
-**Brand Compliance**: Compass Color Palette v1.0
+**Brand Compliance**: Corporate Brand Color Palette v1.0
